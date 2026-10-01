@@ -1,15 +1,39 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Asistente Brian</title>
-<style>body{font-family:system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem;line-height:1.6;color:#222}</style>
+<style>body{font-family:system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem;line-height:1.6;color:#222}nav a{margin-right:1rem}</style>
 </head><body>
+<nav><a href="./">Inicio</a><a href="#privacidad">Política de privacidad</a><a href="terminos.html">Términos del servicio</a></nav>
 <h1>Asistente Brian</h1>
 <p>Asistente personal de un solo usuario (Brian Gutierrez). No es un servicio público y no acepta usuarios externos.</p>
+<p>Le ayuda a agendar en su Google Calendar, a guardar ideas de contenido en una hoja de Google Sheets y a publicar sus propios videos cortos en su cuenta de Instagram y en su canal de YouTube.</p>
+<p><strong>Esta app usa los servicios de API de YouTube</strong> (YouTube API Services) para subir videos al canal de su único usuario. Al usarla, el usuario acepta las <a href="https://www.youtube.com/t/terms">Condiciones del Servicio de YouTube</a>.</p>
+
 <h2 id="privacidad">Política de privacidad</h2>
-<p>La app accede a las cuentas de Google de su único usuario (calendario, correo, hojas de cálculo, YouTube y datos de salud) solo con su autorización y solo para ayudarle con sus propias tareas.</p>
+<p>Actualizada: 1 de octubre de 2026.</p>
+<p>La app accede a las cuentas de su único usuario solo con su autorización y solo para ayudarle con sus propias tareas.</p>
+<h3>Qué datos usa</h3>
 <ul>
-<li>Los datos se procesan en la computadora del usuario y no se venden, comparten ni transfieren a terceros.</li>
+<li><strong>Google Calendar:</strong> crea eventos que el usuario pide.</li>
+<li><strong>Google Drive / Sheets:</strong> solo la hoja de cálculo que crea la propia app (banco de ideas y registro de publicaciones).</li>
+<li><strong>YouTube (YouTube API Services):</strong> solo sube videos del usuario a su propio canal, con título y descripción. No lee, descarga ni analiza videos, comentarios, suscriptores ni estadísticas de YouTube. Lo único que guarda de YouTube es el link del video subido, en la hoja de cálculo del usuario.</li>
+<li><strong>Instagram:</strong> publica los videos del usuario en su propia cuenta.</li>
+</ul>
+<h3>Dónde se procesan y guardan</h3>
+<ul>
+<li>La app corre en la computadora del usuario. Los permisos (tokens) se guardan solo ahí.</li>
+<li>Para transcribir y redactar títulos e ideas, el texto y los videos del usuario se envían a la API de Google Gemini. Los mensajes con el usuario pasan por Telegram.</li>
+<li>Los datos no se venden, no se comparten con terceros fuera de lo anterior y no se usan para publicidad.</li>
+</ul>
+<h3>Políticas de Google y YouTube</h3>
+<ul>
+<li>Al usar esta app aplica la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a> (http://www.google.com/policies/privacy).</li>
 <li>El uso de la información recibida de las APIs de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, incluidos los requisitos de uso limitado.</li>
-<li>El usuario puede revocar el acceso en cualquier momento desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<h3>Cómo revocar el acceso y borrar datos</h3>
+<ul>
+<li>El usuario puede revocar el acceso en cualquier momento desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (Google y YouTube) o desde la configuración de apps de Instagram.</li>
+<li>Al revocarlo, la app deja de poder acceder. Los tokens guardados en la computadora se borran al desinstalar la app; la hoja de cálculo y los videos quedan en las cuentas del usuario, que puede borrarlos cuando quiera.</li>
+<li>Contacto: <a href="https://github.com/Briannge">github.com/Briannge</a>.</li>
 </ul>
 </body></html>
